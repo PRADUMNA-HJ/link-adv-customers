@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Customer & Advocate Connect</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background:paleturquoise;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 1.5rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #004080;
+      margin-bottom: 0.5rem;
+    }
+    form input, form button {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.6rem;
+      font-size: 1rem;
+    }
+    button {
+      background: #004080;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .advocate, .lawyer {
+      background: white;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      margin: 1rem 0;
+      border-radius: 6px;
+    }
+    .lawyer {
+      display: flex;
+      align-items: center;
+    }
+    .lawyer img {
+      width: 80px;
+      height: 80px;
+      margin-right: 1rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 6px;
+    }
+    .card img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    nav {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    nav button {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header><h1>Customer & Advocate Connect</h1></header>
+
+<main>
+
+  <!-- Navigation -->
+  <nav>
+    <button onclick="scrollToSection('customer')">Customer Form</button>
+    <button onclick="scrollToSection('advocates')">Advocates</button>
+    <button onclick="scrollToSection('problems')">Problems</button>
+    <button onclick="scrollToSection('contacts')">Lawyer Contacts</button>
+  </nav>
+
+  <!-- Customer Input -->
+  <section id="customer">
+    <h2>Customer Information</h2>
+    <form id="customerForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Phone Number" pattern="[0-9]{10}" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="City" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Advocates -->
+  <section id="advocates">
+    <h2>Our Advocates</h2>
+    <div class="advocate"><h3>Adv. Priya Sharma</h3><p>Family Law - 120 Cases</p></div>
+    <div class="advocate"><h3>Adv. Ramesh Rao</h3><p>Criminal Law - 180 Cases</p></div>
+    <div class="advocate"><h3>Adv. Raghavendra  prasad</h3><p>Consumer Law - 150Cases</p></div>
+    <div class="advocate"><h3>Adv. Sneha prasad</h3><p>Corporate law - 77Cases</p></div>
+    <div class="advocate"><h3>Adv. Sneha singh</h3><p>banking Law - 100 Cases</p></div>
+    <div class="advocate"><h3>Adv. manmohan .H</h3><p>imigration Law - 56Cases</p></div>
+    <div class="advocate"><h3>Adv. deppak.P</h3><p>estate planningLaw - 15 Cases</p></div>
+    <div class="advocate"><h3>Adv. Sneha .p</h3><p>tax Law - 105Cases</p></div>
+    <div class="advocate"><h3>Adv. naveen mahi</h3><p>army Law - 200 Cases</p></div>
+    <div class="advocate"><h3>Adv. moran .M</h3><p>civil Law - 36Cases</p></div>
+    <div class="advocate"><h3>Adv. morne morkel</h3><p>labour Law - 52 Cases</p></div>
+    <div class="advocate"><h3>Adv.silpa shetty</h3><p>insurance company Law - 69 Cases</p></div>
+    <div class="advocate"><h3>Adv. quinton de cock</h3><p>finance Law -78Cases</p></div>
+    <div class="advocate"><h3>Adv. vishwanath anand</h3><p>criminal Law - 24 Cases</p></div>
+    <div class="advocate"><h3>Adv. kabir singh</h3><p>civil Law - 74 Cases</p></div>
+
+  </section>
+
+  <!-- Problems -->
+  <section id="problems">
+    <h2>Select Your Legal Issue</h2>
+    <div class="grid">
+      <div class="card"><img src="./land.jpg"><p>Land Dispute</p></div>
+      <div class="card"><img src="./cheque.jpg"><p>cheque bounce</p></div>
+      <div class="card"><img src="./water.jpg"><p>water problem</p></div>
+      <div class="card"><img src="./div.jpg"><p>Divorce</p></div>
+      <div class="card"><img src="./murder.jpg"><p>Murder</p></div>
+      <div class="card"><img src="./accident.jpg"><p>Accidental</p></div>
+      <div class="card"><img src="./kip.jpg"><p>Kidnap</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150"><p>Missing Person</p></div>
+      <div class="card"><img src="./dove.jpg"><p>Dowry</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150"><p>Harassment</p></div>
+      <div class="card"><img src="./cyber.jpg"><p>Cyber Crime</p></div>
+      <div class="card"><img src="./proper.jpg"><p>Property Dispute</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150"><p>Consumer Complaint</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150"><p>Tenant Dispute</p></div>
+      <div class="card"><img src="./fraud.jpg"><p>Fraud</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150"><p>Corruption</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150"><p>Child Custody</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150"><p>Illegal Possession</p></div>
+      <div class="card"><img src="./domestic.jpg"><p>Domestic Violence</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150"><p>Other</p></div>
+    </div>
+  </section>
+
+  <!-- Lawyer Contacts -->
+  <section id="contacts">
+    <h2>Lawyers by Case Type</h2>
+
+    <h3>Land Dispute</h3>
+    <div class="lawyer">
+      <img src="./ph1.jpg">
+      <p><strong>Adv. Ramesh Patil</strong><br>Land Specialist<br>📞 9876543210</p>
+    </div>
+
+    <h3>Divorce</h3>
+    <div class="lawyer">
+      <img src="./fe1.jpg">
+      <p><strong>Adv. Priya Sharma</strong><br>Family Lawyer<br>📞 9123456789</p>
+    </div>
+
+    <h3>Cheque Bounce</h3>
+    <div class="lawyer">
+      <img src="./ph3.png">
+      <p><strong>Adv. Anil Desai</strong><br>Finance Law<br>📞 9988776655</p>
+    </div>
+
+        <h3>criminal</h3>
+    <div class="lawyer">
+      <img src="./ph4.png">
+      <p><strong></strong>Adv. vishwanath anand<br>Family Lawyer<br>📞 9123414389</p>
+    </div>
+
+     <h3>army lawyer</h3>
+    <div class="lawyer">
+      <img src="https://via.placeholder.com/80">
+      <p><strong></strong>Adv. naveen mahi<br>army Lawyer<br>📞 9123498489</p>
+    </div>
+
+    <h3>labour lawyer</h3>
+    <div class="lawyer">
+      <img src="./ph5.jpg" id="mv">
+      <p><strong></strong>Adv.  morne morkel<br>labour Lawyer<br>📞 9123400789</p>
+    </div>
+
+    <h3>civil lawyer</h3>
+    <div class="lawyer">
+      <img src="./ph6.jpg">
+      <p><strong></strong>Adv. kabir singh<br>civil Lawyer<br>📞 9123800789</p>
+    </div>
+
+
+    <!-- Add more lawyer blocks for each category -->
+  </section>
+
+</main>
+
+<script>
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  }
+
+  document.getElementById("customerForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Customer details submitted. Proceeding to advocate list...");
+    scrollToSection("advocates");
+  });
+</script>
+
+</body>
+</html>
